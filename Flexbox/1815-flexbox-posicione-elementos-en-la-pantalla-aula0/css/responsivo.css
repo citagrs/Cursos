@@ -1,0 +1,63 @@
+@media (max-width:768px) {
+
+    /* Menu */
+    .headerPrincipal .container {
+        flex-direction: column;
+        /* Organiza los elementos uno debajo del otro */
+        align-items: initial;
+        /* Permite que cada caja tenga el ancho completo */
+        text-align: center;
+        /* Centra los elementos */
+    }
+
+    .headerPrincipal-nav {
+        flex-direction: column;
+    }
+
+    /* Lista de Cursos */
+    .contenidoPrincipal-cursos {
+        flex-direction: column;
+    }
+
+    .contenidoPrincipal-cursos-link {
+        width: 100%;
+        /* Permite que la caja use el 100% del ancho */
+    }
+
+    /* Mapa de cursos */
+    .rodapePrincipal-navMap-list {
+        height: auto;
+        /*altura automatica */
+        flex-wrap: nowrap;
+        /* Impide que la columna quede al lado de la otra */
+    }
+
+    /* Footer */
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        align-items: center;
+        /* Centra los elementos de forma vertial */
+        width: 100%;
+        margin: 0%;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
+    /* Video */
+    .videoSobre .container{
+        flex-direction: column;
+    }
+
+    /* Cambiar orden de un elemento */
+    .headerPrincipal-nav-link-app{
+        order: -1;
+    }
+}

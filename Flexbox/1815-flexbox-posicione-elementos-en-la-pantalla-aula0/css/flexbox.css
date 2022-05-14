@@ -1,0 +1,60 @@
+/* Seccion de menu */
+.headerPrincipal .container{
+    display: flex; /* Los elementos quedan de un lado al otro */
+    align-items: center; /* Alinear elementos verticalmente */
+    justify-content: space-between; /* Espacio entre los elementos e inicia con un elemento */
+}
+.headerPrincipal-nav{
+    display: flex;
+}
+/* Footer */
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+}
+.rodapePrincipal-patrocinadores-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Espacio alrededor de los elementos */
+    width: 70%;/* Tamaño de la seccion con respecto al ancho de la pantalla */
+    margin-right:5%;/* Margin a la derecha para que no quedara pegado con la otra seccion de formulario */
+}
+.rodapePrincipal-contatoForm{
+    width: 25%;
+}
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
+/* Seccion de Mapa de cursos */
+.rodapePrincipal-navMap-list{
+    display: flex;
+    flex-direction: column; /* Elemenos de un lado al otro en forma de columna uno debajo de otro*/
+    height: 250px;/* Se le da una altura a cada columna */
+    flex-wrap: wrap;/* Se le indica que una vez finalice la columna la siguiente columna quede al lado */
+}
+/* Seccion de cursos */
+.contenidoPrincipal-cursos{
+    display: flex;/* Agrego los elemenos uno despues del otro */
+    flex-wrap: wrap; /* Organiza los elementos uno despues del otro */
+}
+.contenidoPrincipal-cursos-link{
+    display: flex;
+    width: 23%;/* Le da un ancho a las columnas, se tiene en cuenta llenar completamente el espacio y dejar un margen */
+}
+/* Video */
+.videoSobre .container{
+    display: flex;
+}
+.videoSobre-sobre{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.videoSobre-video {
+    flex-grow: 2;
+    flex-shrink: 2; /* reduce el tamaño mientras se achica la pantalla */
+}
+.videoSobre-sobre-list{
+    flex-grow: 2; /* Añade un espaciado de 2 al finalizar la caja */
+}

@@ -1,4 +1,4 @@
-import { cuentaCorriente } from './cuentas.js';
+import { cuentaCorriente } from './cuentas.js'; /* Se importa el archivo para usarlo aquí */
 import { cliente } from './clientes.js';
 
 const clienteUno = new cliente();
@@ -13,7 +13,7 @@ cuentaDeOscar.cliente = clienteUno;
 
 console.log(cuentaDeOscar);
 
-
+/* Es importante dejar en null aquellas variables que iniciamos pero que aun no le damos un valor */
 
 /* CUENTA DE GERAL */
 
