@@ -1,3 +1,9 @@
+import checkComplete from "./componentes/agregarProducto.js";
+import borrarIcono from "./componentes/borrarProducto.js";
+
+//(()=> { /* Javascrip IIFE permite brindar seguridad a el aplicativo lo cual impide
+//que las funciones realizadas en el presente sean mal ejecutadas desde el nevagador */
+
 /* Se almacena en la variable btn al objeto llamado data-form-btn el cual es el boton de la pagina */
 const btn = document.querySelector("[data-form-btn]");
 
@@ -21,21 +27,25 @@ const agregarProducto = (evento) => {
     /* Permite que despues de almacenar la palabra en la constante, el input quede en blanco */
     input.value = "";
 
-    const contenido = `<div>
-            <i class="far fa-check-square icon"></i>
-            <span class="product">${value}</span>
-        </div>
-        <i class="fas fa-trash-alt trashIcon icon"></i>`;
+    const productoContent = document.createElement("div");
 
-    /* Añade la infromacion de la variable contenido en la constante producto donde se almacena el
-    listado de los productos */    
-    producto.innerHTML = contenido;
+    const titleProducto = document.createElement("span");
+    titleProducto.classList.add("product");
+    titleProducto.innerHTML= value;
+
+    productoContent.appendChild(checkComplete());
+    productoContent.appendChild(titleProducto);
+
+    producto.appendChild(productoContent);
+
+    producto.appendChild(borrarIcono());
 
     lista.appendChild(producto);
-
 }
 
 /* Ahora se toma la constante btn y se llama el metodo addEventListener para "escuchar" el evento, el cual posee dos 
 parametros, el tipo de evento (en este caso click) y la que se realizara al usar el evento, en otras palabras, lo que
 sucedera al dar click sobre el boton */
 btn.addEventListener("click", agregarProducto);
+
+//})();/* Cierre de seguridad */
